@@ -87,7 +87,7 @@
   <div class="pt-4 flex flex-col">
     <div class="pb-3 font-bold">Total: $ {{ total() }}</div>
     <div class="flex space-y-2" *ngFor="let product of cart()">
-      <img class="p-1 rounded-t-lg size-20" [src]="product.image" [alt]="product.id">
+      <img class="p-1 rounded-t-lg size-20" [src]="product.images[0]" [alt]="product.id">
       <div>
         <h3 class="text-gray-900">{{ product.title }}</h3>
         <span class="-text-xl font-bold text-gray-900">
