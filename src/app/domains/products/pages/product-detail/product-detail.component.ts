@@ -10,7 +10,7 @@ import { ProductService } from '@shared/services/product.service';
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.css'
 })
-export class ProductDetailComponent implements OnInit {
+export default class ProductDetailComponent implements OnInit {
 
   /** ID of selected product */
   @Input() id?: string;
